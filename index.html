@@ -39,21 +39,90 @@
 						<a class="nav-link" href="anime.html">Animes</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="genre.html">Genres</a>
+						<a class="nav-link" href="genres.html">Genres</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="login.html">Login</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="signup.html">Sign Up</a>
 					</li>
 				</ul>
 				<form class="d-flex">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 				</form>
+				<div>
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+						Login
+					</button>
+					&nbsp;
+					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signUpModal">
+						Sign up
+					</button>
+				</div>
+				<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="loginModalLabel">Modal title</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="mb-3">
+										<label for="exampleInputEmail1" class="form-label">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1"
+											aria-describedby="emailHelp">
+										<div id="emailHelp" class="form-text">We'll never share your email with anyone
+											else.</div>
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputPassword1" class="form-label">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1">
+									</div>
+									<div class="mb-3 form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1"> Stay logged in? </label>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+								<button type="button" class="btn btn-primary">Login</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="signUpModalLabel">Modal title</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="mb-3">
+										<label for="exampleInputEmail1" class="form-label">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1"
+											aria-describedby="emailHelp">
+										<div id="emailHelp" class="form-text">We'll never share your email with anyone
+											else.</div>
+									</div>
+									<div class="mb-3">
+										<label for="exampleInputPassword1" class="form-label">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1">
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Exit</button>
+								<button type="button" class="btn btn-primary">Sign Up</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -145,9 +214,11 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
-			loop:true,
+			loop: true,
 		});
 	</script>
+	<script src="Login.js"></script>
+	<script src="SignUp.js"></script>
 </body>
 
 </html>
